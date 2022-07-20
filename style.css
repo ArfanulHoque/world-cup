@@ -170,3 +170,52 @@ hr {
     margin-top: 50px;
 
 }
+
+
+/*-----------------
+ Match-HTML Styles 
+-------------------*/
+
+.match2 {
+    color: black;
+    font-weight: 500;
+    font-size: 20px;
+    text-decoration: none;
+    background-color: lightcoral;
+    padding: 20px 40px;
+    border-radius: 10px;
+}
+
+.group2 {
+    color: black;
+    font-weight: 500;
+    font-size: 20px;
+    text-decoration: none;
+    background-color: white;
+    padding: 20px 91px;
+    border-radius: 10px;
+}
+
+.blog2 {
+    color: black;
+    font-weight: 500;
+    font-size: 20px;
+    text-decoration: none;
+    background-color: white;
+    padding: 20px 115px;
+    border-radius: 10px;
+}
+
+.flag {
+    display: flex;
+
+}
+
+.versus {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.box-title2 {
+    padding-left: 35px;
+}
