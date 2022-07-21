@@ -5,6 +5,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
+    width: 100%;
 }
 
 /*-------------
@@ -14,7 +15,7 @@ Header Styles
     background-color: black;
     width: 1400px;
     height: 646px;
-    padding-left: 106px;
+
     border-radius: 30px;
     margin-top: 50px;
     margin-left: 140px;
@@ -22,6 +23,7 @@ Header Styles
 
 .container1 {
     display: flex;
+    padding-left: 106px;
 }
 
 .headline {
@@ -48,9 +50,14 @@ Header Styles
     border-radius: 5px;
 }
 
+
+
+.btn1:hover {
+    background-color: aqua;
+}
+
 .banner-img {
-    padding-left: 350px;
-    padding-top: 120px;
+    padding: 120px;
     width: 500px;
 }
 
@@ -61,8 +68,9 @@ Header Styles
     width: 312px;
     height: 312px;
     background-color: black;
+    text-align: center;
+    padding: 30px;
     padding-top: 30px;
-    padding-left: 30px;
     border-radius: 10px;
     margin-top: 100px;
     margin-left: 140px;
@@ -76,6 +84,7 @@ Header Styles
     background-color: white;
     padding: 20px 40px;
     border-radius: 10px;
+
 }
 
 .group {
@@ -86,6 +95,7 @@ Header Styles
     background-color: white;
     padding: 20px 91px;
     border-radius: 10px;
+
 }
 
 .blog {
@@ -97,6 +107,9 @@ Header Styles
     padding: 20px 115px;
     border-radius: 10px;
 }
+
+
+
 
 .button1 {
     padding-top: 30px;
@@ -119,12 +132,24 @@ Header Styles
     grid-template-columns: repeat(3, 1fr);
     margin-top: 100px;
     padding-left: 14px;
+
 }
 
-.box {
+.card {
+    border: 1px solid whitesmoke;
+    border-radius: 10px;
     width: 312px;
     height: 362px;
     padding-left: 24px;
+}
+
+.card .box {
+    display: grid;
+    grid-template-columns: 3, 1fr;
+}
+
+.card img {
+    width: 100%;
 }
 
 .box-title {
@@ -140,14 +165,33 @@ Header Styles
     padding-left: 10px;
 }
 
+.view {
+    background-color: lightcoral;
+    padding: 10px 40px;
+    border-radius: 5px;
+
+}
+
+.view-all {
+    text-align: center;
+}
+
+.view-all,
+.view {
+    display: none;
+}
+
+
 /*-------------
  Footer Styles 
  --------------*/
-footer {
+.footer {
     text-align: center;
-    background-color: black;
+    background-color: #161616;
     height: 444px;
+
 }
+
 
 .goal {
     color: white;
@@ -156,9 +200,9 @@ footer {
 }
 
 hr {
-    width: 1320px;
+    width: 75%;
     height: 0;
-    border: 1px solid gray;
+    border: 0.5px solid gray;
 }
 
 .service {
@@ -169,6 +213,11 @@ hr {
     font-size: 16px;
     margin-top: 50px;
 
+}
+
+.fa-brands {
+    color: dodgerblue;
+    padding: 10px;
 }
 
 
@@ -218,4 +267,177 @@ hr {
 
 .box-title2 {
     padding-left: 35px;
+}
+
+/*------------------
+ Responsive Website 
+ -------------------*/
+
+/* Mobilen Layout */
+
+@media only screen and (min-width:120px) and (max-width:480px) {
+
+    .header {
+        width: 667px;
+        height: 1227px;
+        text-align: center;
+        margin-left: 320px;
+    }
+
+    .container1 {
+        display: contents;
+        width: 100%;
+    }
+
+    .headline {
+        text-align: center;
+        margin-left: 83px;
+    }
+
+    .world-cup {
+        padding-left: 80px;
+    }
+
+    .blogs {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .card img {
+        width: 100%;
+    }
+
+    .box {
+        width: 100%;
+    }
+
+
+    .transfer {
+        grid-template-columns: repeat(1, 1fr);
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .buttons {
+        background-color: white;
+        margin-top: 0;
+        margin-left: 455px;
+    }
+
+    .transfer {
+        width: 667px;
+        margin-top: 40px;
+        padding-left: 463px;
+    }
+
+    .view-all,
+    .view {
+        display: none;
+    }
+
+
+    footer {
+        width: 100%;
+        width: 667px;
+
+        text-align: center;
+        margin-left: 320px;
+        border-radius: 20px;
+    }
+
+    .footer {
+        height: 100%;
+    }
+
+    .ft-container {
+        background-color: #161616;
+    }
+
+    hr {
+        width: 335px;
+    }
+
+    .service {
+        display: grid;
+        grid-template-columns: 1, 1fr;
+    }
+
+    .fa-brands {
+        text-align: center;
+    }
+
+}
+
+/* Tablate Layout */
+
+@media only screen and (min-width:481px) and (max-width:768px) {
+    body {
+
+        margin: 100px 100px;
+    }
+
+    .headedr {
+        width: 1250px;
+        position: relative;
+    }
+
+    .container1 {
+
+        width: 100%;
+    }
+
+    .transfer {
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        margin-top: 0;
+        padding-left: 400px;
+    }
+
+    .card img {
+        width: 100%;
+    }
+
+    .box {
+        width: 100%;
+    }
+
+    .blogs {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .buttons {
+        height: 95px;
+        width: 166%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        background-color: rgba(255, 255, 255, 0);
+        justify-content: start;
+        margin-top: 0;
+        padding-top: 0;
+        padding-left: 300px;
+    }
+
+    .view-all {
+        padding-left: 500px;
+    }
+
+    footer {
+        width: 1450px;
+        padding: 150px;
+
+    }
+
+    .footer {}
+}
+
+@media only screen and (min-width:769px) and (max-width:1500px) {
+
+
+    .view-all,
+    .view {
+        display: none;
+    }
 }
